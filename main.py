@@ -14,5 +14,5 @@ def arp_scan():
     for sent, received in result:
         print(received.sprintf("%Ether.src%\t%ARP.psrc%"))
 
-if __name__ == "__main__":
-    arp_scan()
+# if __name__ == "__main__":
+#     arp_scan()
