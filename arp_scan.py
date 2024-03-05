@@ -6,7 +6,7 @@ def arp_scan():
     arp_request = Ether(dst="ff:ff:ff:ff:ff:ff") / ARP(pdst="192.168.1.0/24") #ip address
 
     # Sending the ARP request and receiving responses
-    result, unanswered = srp(arp_request, timeout=0.01, verbose=0)
+    result, unanswered = srp(arp_request, timeout=2, verbose=0)
 
     # Displaying the results
     if result:
